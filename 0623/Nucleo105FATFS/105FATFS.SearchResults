@@ -1,0 +1,9 @@
+---- receive_count Matches (9 in 2 files) ----
+Main.c (user):extern u8 receive_data[20], receive_count;
+Main.c (user):   if(receive_count == 14)
+Main.c (user):      receive_count = 0;
+Usart.c (user):u8 receive_data[20], receive_count;
+Usart.c (user):      receive_data[receive_count] = res;
+Usart.c (user):    if(receive_count != 19)
+Usart.c (user):      receive_count = receive_count + 1;
+Usart.c (user):      receive_count = 0;

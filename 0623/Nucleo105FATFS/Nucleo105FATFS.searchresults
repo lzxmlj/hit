@@ -1,0 +1,10 @@
+---- backup_type Matches (9 in 2 files) ----
+Main.c (user):u8 backup_type;
+Main.c (user):     backup_type = 0;
+Main.c (user):               if((backup_type == 0) &&(complete_count == 0))
+Main.c (user):                  backup_type  = 1;
+Main.c (user):               else if((backup_type == 1) &&(complete_count == 0))
+Main.c (user):                  backup_type  = 0;
+Stm32f10x_it.c (user):extern u8 first_start, backup_type;
+Stm32f10x_it.c (user):   if(backup_type == 0)
+Stm32f10x_it.c (user):   else if(backup_type == 1)

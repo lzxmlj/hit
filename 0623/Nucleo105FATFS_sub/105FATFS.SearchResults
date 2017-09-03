@@ -1,0 +1,22 @@
+---- CAN_need_update_data Matches (26 in 2 files) ----
+Main.c (user):extern u8 CAN_need_update, test_buff[40970], CAN_need_update_data[8];
+Main.c (user):      if((CAN_need_update_data[0] == 0xFF) && (CAN_need_update_data[1] == TxMsg2.StdId) && ((CAN_need_update_data[7] == 0xFF)))
+Main.c (user):         CAN_need_update_data[0] = 0;
+Main.c (user):         CAN_need_update_data[1] = 0;
+Main.c (user):   if(CAN_need_update_data[7] == 0x55)
+Main.c (user):      RTC_Set(2017, CAN_need_update_data[0],CAN_need_update_data[1], CAN_need_update_data[2], CAN_need_update_data[3],
+Main.c (user):         CAN_need_update_data[4]  );
+Main.c (user):      time_count_ms  = CAN_need_update_data[5] * 0x100;
+Main.c (user):      time_count_ms  = time_count_ms + CAN_need_update_data[6] & 0xFF;
+Main.c (user):      CAN_need_update_data[7] = 0;
+Main.c (user):   else if((CAN_need_update_data[7] == 0x99))
+Main.c (user):      calendar.sec = CAN_need_update_data[0];
+Main.c (user):      time_count_ms  = CAN_need_update_data[1] * 0x100;
+Main.c (user):      time_count_ms  = time_count_ms + (CAN_need_update_data[2] & 0xFF);
+Main.c (user):      Counter_main  = CAN_need_update_data[3] * 0x100;
+Main.c (user):      Counter_main  = Counter_main + (CAN_need_update_data[4] & 0xFF);
+Main.c (user):      CAN_need_update_data[7] = 0;
+Main.c (user):   else if(CAN_need_update_data[0] == 0x11)
+Main.c (user):      CAN_need_update_data[0] = 0;
+Stm32f10x_it.c (user):u8 test_buff[40970], CAN_need_update_data[8];
+Stm32f10x_it.c (user):          CAN_need_update_data[i] = RxMessage.Data[i];

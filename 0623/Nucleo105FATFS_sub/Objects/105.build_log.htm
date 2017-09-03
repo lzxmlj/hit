@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=UB456-DSDAX-KSHYM-X362D-52IW8-0ILFF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  e:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+E:\mazong\hit1\0623\Nucleo105FATFS_sub\105.uvprojx
+Project File Date:  06/13/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'e:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+USER\main.c(91): warning:  #1295-D: Deprecated declaration CAN1_Config - give arg types
+  extern void CAN1_Config();
+USER\main.c(92): warning:  #1295-D: Deprecated declaration clearCANbuffer - give arg types
+  void clearCANbuffer();
+USER\main.c(94): warning:  #1295-D: Deprecated declaration MYRCC_DeInit - give arg types
+  extern void MYRCC_DeInit();
+USER\main.c(105): warning:  #1295-D: Deprecated declaration CAN_Analysis - give arg types
+  static void CAN_Analysis();
+USER\main.c(124): warning:  #186-D: pointless comparison of unsigned integer with zero
+    if( ( a >= 0 ) && (a <= 9))
+USER\main.c(156): warning:  #177-D: variable "k"  was declared but never referenced
+    u32 i, j,k,l,m;
+USER\main.c(156): warning:  #177-D: variable "l"  was declared but never referenced
+    u32 i, j,k,l,m;
+USER\main.c(156): warning:  #177-D: variable "m"  was declared but never referenced
+    u32 i, j,k,l,m;
+USER\main.c(237): warning:  #177-D: variable "GPIO_InitStructure"  was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStructure; 
+USER\main.c(240): warning:  #177-D: variable "TIM_ICInitStructure"  was declared but never referenced
+    TIM_ICInitTypeDef TIM_ICInitStructure;
+USER\main.c(262): warning:  #177-D: variable "GPIO_InitStructure"  was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStructure; 
+USER\main.c(265): warning:  #177-D: variable "TIM_ICInitStructure"  was declared but never referenced
+    TIM_ICInitTypeDef TIM_ICInitStructure;
+USER\main.c(287): warning:  #177-D: variable "GPIO_InitStructure"  was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStructure; 
+USER\main.c(290): warning:  #177-D: variable "TIM_ICInitStructure"  was declared but never referenced
+    TIM_ICInitTypeDef TIM_ICInitStructure;
+USER\main.c(312): warning:  #177-D: variable "CAN_InitStructure"  was declared but never referenced
+    CAN_InitTypeDef  CAN_InitStructure;
+USER\main.c(313): warning:  #177-D: variable "CAN_FilterInitStructure"  was declared but never referenced
+    CAN_FilterInitTypeDef CAN_FilterInitStructure;
+USER\main.c(333): warning:  #177-D: variable "exti"  was declared but never referenced
+    EXTI_InitTypeDef exti;
+USER\main.c(448): warning:  #223-D: function "MY_NVIC_Init" declared implicitly
+   MY_NVIC_Init(1,0,USB_LP_CAN1_RX0_IRQn,2);//ï¿½ï¿½2
+USER\main.c(227): warning:  #177-D: function "RCC_Configuration"  was declared but never referenced
+  static void RCC_Configuration(void)
+USER\main.c(97): warning:  #177-D: variable "CTR"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "MTA_Number"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "Add_ext"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "DAQ_number"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "object_ODT"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "element_ODT"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "last_ODT_number"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(97): warning:  #177-D: variable "event_channel_no"  was declared but never referenced
+  static u8 CTR, MTA_Number, Add_ext, DAQ_number, object_ODT, element_ODT, last_ODT_number, event_channel_no;
+USER\main.c(98): warning:  #177-D: variable "DTO_ID"  was declared but never referenced
+  static u32 DTO_ID, pended_message;
+USER\main.c(99): warning:  #177-D: variable "transmit_rate"  was declared but never referenced
+  static u16 transmit_rate;
+USER\main.c(105): warning:  #177-D: function "CAN_Analysis"  was declared but never referenced
+  static void CAN_Analysis();
+USER\main.c: 30 warnings, 0 errors
+linking...
+Program Size: Code=6976 RO-data=292 RW-data=220 ZI-data=41588  
+FromELF: creating hex file...
+".\Objects\105.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  e:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
